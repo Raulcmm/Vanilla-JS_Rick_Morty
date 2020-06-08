@@ -1,0 +1,26 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+.container{
+    background-image: url('../assets/img/27333-rick-y-morty.jpg');
+    background-position: center center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#content{
+    width: 25%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    
+}
+
+.nav{
+    display:  flex;
+}
