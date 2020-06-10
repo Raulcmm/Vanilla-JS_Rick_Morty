@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -9,23 +9,33 @@
     <link rel="stylesheet" href="./src/css/app.css">
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/74be2980b5.js" crossorigin="anonymous"></script>
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Rick & Morty API </title>
 </head>
 
 <body>
     <div class="container">
-        <nav class="nav">
-            <img src="./src/assets/img/logo.png" alt="logo Rick & Morty">
-            <div class="social">
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin-in"></i>
-            </div>
-        </nav>
-        <!--  -->
-        <div id="content"></div>
+        <div class="content">
+            <nav class="nav">
+                <img src="./src/assets/img/logo.png" alt="logo Rick & Morty">
+                <div class="social">
+                    <a href="https://www.instagram.com/raul_camachom/" target="_blank">
+                        <i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100027158500978" target="_blank">
+                        <i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/RaulCamachoM" target="_blank">
+                        <i class="fab fa-twitter"></i></a>
+                    <a href="https://mx.linkedin.com/in/raul-camacho-rcm?trk=people-guest_people_search-card"
+                        target="_blank">
+                        <i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </nav>
+            <!--  -->
+            <div id="card"></div>
+        </div> <!-- .content -->
     </div>
+    <!-- .container -->
     <script type="module" src="src/js/index.js"></script>
 </body>
 

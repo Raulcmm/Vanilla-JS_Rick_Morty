@@ -1,26 +1,76 @@
 html {
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
+}
+*,
+*:before,
+*:after {
     box-sizing: inherit;
-  }
-
-
-.container{
-    background-image: url('../assets/img/27333-rick-y-morty.jpg');
+}
+body{
+    font-family: 'Balsamiq Sans', cursive;
+}
+/*background image*/
+.container {
+    background-image: url("../assets/img/27333-rick-y-morty.jpg");
     background-position: center center;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
-#content{
-    width: 25%;
+/*size of window*/
+.content {
+    width: 90%;
     margin: 0 auto;
-    background-color: #FFFFFF;
-    
+}
+/*logo & social media*/
+.nav {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+.social {
+    align-self: center;
+    text-align: right;
+}
+.social i {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-right: 1rem;
+    border-bottom: 5px solid transparent;
+}
+.social i:hover {
+    border-bottom: 3px solid #ffffff;
 }
 
-.nav{
-    display:  flex;
+/*principal content*/
+#card {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #000000ad;
+    border: 1px solid #CCCCCC;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#card .principal {
+    padding-right: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+}
+#card .principal #img{
+    margin-top: 1rem;
+    border-radius: 50%;
+}
+
+#card .attributes{
+    align-self: center;
+}
+#card .attributes > p{
+    padding-top: 1rem;
+    color: #FFFFFF;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+#card .attributes span{
+    font-size: 1rem;
 }

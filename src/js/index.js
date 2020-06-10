@@ -1,7 +1,7 @@
 import Api from './api.js';
 
 /**DOM */
-let container = document.querySelector('#content');
+let card = document.querySelector('#card');
 
 /**instance of class api */
 let api = new Api();
@@ -15,17 +15,24 @@ async function initApp() {
 	}
 	setTimeout(() => {
 		initApp();
-	}, 1000);
+	}, 5000);
 }
 
 function renderCharacter(data) {
 	let htmlContent = `
-    <h1 id="name">${data.name}</h1>
-    <img id="img" src="${data.image}" alt="${data.name}">
-    <p id="specie">${data.species}</p>
-    <p id="status">${data.status}</p>
+	<div class="principal">
+		<h1 id="name">${data.name}</h1>
+		<img id="img" src="${data.image}" alt="${data.name}">
+	</div>
+	<div class="attributes">
+		<p id="status"> Status: <span>${data.status}</span></p>
+		<p id="specie"> Specie: <span>${data.species}</span></p>
+		<p id="gender"> Gender: <span>${data.gender}</span></p>
+		<p id="location"> Location: <span>${data.location.name}</span></p>
+	</div>
+
     `;
-	container.innerHTML = htmlContent;
+	card.innerHTML = htmlContent;
 }
 
 initApp();
