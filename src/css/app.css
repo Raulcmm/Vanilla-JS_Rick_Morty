@@ -11,7 +11,7 @@ body{
 }
 /*background image*/
 .container {
-    background-image: url("../assets/img/27333-rick-y-morty.jpg");
+    background-image: url("../assets/img/rick-morty.jpg");
     background-position: center center;
     height: 100vh;
     background-repeat: no-repeat;
@@ -50,6 +50,8 @@ body{
     padding: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90% 10%;
+    height: 500px;
 }
 #card .principal {
     padding-right: 1rem;
@@ -71,6 +73,26 @@ body{
     font-size: 1.5em;
     font-weight: 700;
 }
+#card .attributes small{
+    color: #FFFFFF;
+    font-size: 1rem;
+}
 #card .attributes span{
     font-size: 1rem;
+}
+
+/*buttons*/
+.arrows-container{
+    grid-column: 1/3;
+    justify-self: center;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+.arrow{
+    color: white;
+    cursor: pointer;
+    font-size: 3rem;
+    text-align: center;
+    width: 20px;
 }
