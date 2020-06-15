@@ -9,27 +9,21 @@ async function initApp() {
 	if (ID_CHARACTER == -1) {
 		ID_CHARACTER = +(Math.random() * 591).toFixed(0);
 	}
-	let dataApi = await api.getCharacters(ID_CHARACTER );
+	let dataApi = await api.getCharacters(ID_CHARACTER);
 	renderCharacter(dataApi);
 }
 
 document.addEventListener('click', (e) => {
 	let left = e.target.classList.contains('left');
 	let right = e.target.classList.contains('right');
-	if (left && ID_CHARACTER>1) {
+	if (left && ID_CHARACTER > 1) {
 		ID_CHARACTER--;
-	} else if (right && ID_CHARACTER<591) {
+	} else if (right && ID_CHARACTER < 591) {
 		ID_CHARACTER++;
 	}
-
- initApp();
-	console.log(ID_CHARACTER);
+	initApp();
+	// console.log(ID_CHARACTER);
 });
-function nextCharacter() {
-	console.log('hol');
-}
-
-function previousCharacter() {}
 
 function renderCharacter(data) {
 	let htmlContent = `

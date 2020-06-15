@@ -11,7 +11,7 @@ body{
 }
 /*background image*/
 .container {
-    background-image: url("../assets/img/rick-morty.jpg");
+    background-image: url("../assets/img/rick_morty.jpg");
     background-position: center center;
     height: 100vh;
     background-repeat: no-repeat;
