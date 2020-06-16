@@ -14,6 +14,7 @@ async function initApp() {
 }
 
 document.addEventListener('click', (e) => {
+	//get the refence of the buttons
 	let left = e.target.classList.contains('left');
 	let right = e.target.classList.contains('right');
 	if (left && ID_CHARACTER > 1) {
@@ -21,10 +22,11 @@ document.addEventListener('click', (e) => {
 	} else if (right && ID_CHARACTER < 591) {
 		ID_CHARACTER++;
 	}
+	//when the global id changes call the api and the render
 	initApp();
-	// console.log(ID_CHARACTER);
 });
 
+//only render
 function renderCharacter(data) {
 	let htmlContent = `
 	<div class="principal">
